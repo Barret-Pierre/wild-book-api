@@ -1,0 +1,38 @@
+GET http://localhost:3001
+
+###
+# Wilders requests
+### Read All
+GET http://localhost:3001/api/wilders
+
+### Read One
+GET http://localhost:3001/api/wilders/2
+
+### Create
+POST http://localhost:3001/api/wilders
+Content-Type: application/json
+
+{
+    "name": "Jonhy Cash",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut. Massa vitae tortor condimentum lacinia quis vel eros donec."
+}
+
+### Update
+PUT http://localhost:3001/api/wilders/1
+Content-Type: application/json
+
+{
+    "name": "Stan Smith",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut. Massa vitae tortor condimentum lacinia quis vel eros donec."
+}
+
+
+### Delete
+DELETE http://localhost:3001/api/wilders/2
+
+
+
+
+
+
+

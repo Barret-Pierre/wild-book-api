@@ -1,0 +1,31 @@
+###
+# Upvotes requests
+### Read All
+GET http://localhost:3001/api/upvotes
+
+### Read One
+GET http://localhost:3001/api/upvotes/1
+
+### Create
+POST http://localhost:3001/api/upvotes
+Content-Type: application/json
+
+{
+    "skill":
+        {
+            "id": 1
+        }, 
+    "wilder":
+        {
+            "id": 1
+        }
+}
+
+### Update
+PUT http://localhost:3001/api/upvotes/17
+
+
+### Delete
+DELETE http://localhost:3001/api/upvotes/1
+
+

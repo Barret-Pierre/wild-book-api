@@ -1,0 +1,26 @@
+###
+# Photos requests
+### Read All
+GET http://localhost:3001/api/photos
+
+### Read One
+GET http://localhost:3001/api/photos/1
+
+### Create
+POST http://localhost:3001/api/photos
+Content-Type: application/json
+
+{
+    "demo_image": "photo_id_2"
+}
+
+### Update
+PUT http://localhost:3001/api/photos/1
+Content-Type: application/json
+
+{
+    "url": "photo_id_1"
+}
+
+### Delete
+DELETE http://localhost:3001/api/photos/2
