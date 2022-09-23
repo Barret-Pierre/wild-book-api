@@ -69,7 +69,7 @@ export const photoController: IController = {
         id: Number(req.params.photoId),
       });
       console.log("Skill found");
-      res.sendFile(path.resolve(__dirname, `/../../${onePhoto.url}`));
+      res.sendFile(path.join(__dirname, `/../../${onePhoto.url}`));
     } catch (error: any) {
       console.error(error);
       res.status(404).json({
